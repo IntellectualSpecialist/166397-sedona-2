@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Степан Васильев](https://up.htmlacademy.ru/htmlcss-individual/2/user/166397).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
