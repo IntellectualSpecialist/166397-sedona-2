@@ -2,7 +2,7 @@
 
 * Студент: [Степан Васильев](https://up.htmlacademy.ru/htmlcss-individual/2/user/166397).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-
+* Деплой: [Екатерина Комнатная](https://intellectualspecialist.github.io/166397-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
