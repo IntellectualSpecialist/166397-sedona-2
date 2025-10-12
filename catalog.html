@@ -8,7 +8,7 @@
   <body>
 
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="page-header__logo logo" href="index.html">
           <img width="140" height="70" src="#" alt="Логотип «Седона».">
         </a>
@@ -49,13 +49,13 @@
         <a class="header__want button button--primary" href="#">Хочу сюда!</a>
       </header>
 
-      <main>
+      <main data-test="main">
         <section class="hotels">
           <div class="hotels__wrapper">
             <header class="hotels__header">
               <h1 class="hotels__title title-extra-large">Гостиницы Седоны</h1>
 
-              <ul class="breadcrumbs">
+              <ol class="breadcrumbs">
                 <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html">
                     <span class="visually-hidden">Главная</span>
@@ -67,11 +67,11 @@
                     <span>Гостиницы</span>
                   </a>
                 </li>
-              </ul>
+              </ol>
             </header>
 
-            <div class="hotels__filters filters">
-              <form ction="https://echo.htmlacademy.ru/" method="get">
+            <div class="hotels__filters filters" data-test=" filter">
+              <form action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filters__group">
                   <legend class="filters__title">Инфраструктура:</legend>
 
@@ -166,11 +166,11 @@
             </div>
           </div>
 
-          <section class="hotels__cards hotels-cards">
+          <section class="hotels__cards hotels-cards" data-test="catalog">
             <header class="hotels-cards__header">
               <h2 class="hotels-cards__title">Найдено гостиниц: <span class="hotels-cards__title-count">38</span></h2>
 
-              <select name="hotels-cards__sorting sorting">
+              <select name="hotels-cards__sorting sorting" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
@@ -306,7 +306,7 @@
               </li>
             </ul>
 
-            <ul class="hotels__pagination pagination">
+            <ol class="hotels__pagination pagination">
               <li class="pagination__item">
                 <a class="pagination__link pagination__link--current">1</a>
               </li>
@@ -330,11 +330,11 @@
               <li class="pagination__item">
                 <a class="pagination__link" href="#">10</a>
               </li>
-            </ul>
+            </ol>
           </section>
         </section>
 
-        <section class="subscribe subscribe--light">
+        <section class="subscribe subscribe--light" data-test="subscribe">
           <div class="subscribe__intro intro">
             <h2 class="subscribe__title intro__title title-large">Подпишитесь на&#160;рассылку</h2>
 
@@ -354,7 +354,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">

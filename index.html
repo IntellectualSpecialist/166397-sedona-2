@@ -8,7 +8,7 @@
   <body>
 
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <a class="page-header__logo logo">
           <img width="140" height="70" src="#" alt="Логотип «Седона».">
         </a>
@@ -49,14 +49,14 @@
         <a class="header__want button button--primary" href="#">Хочу сюда!</a>
       </header>
 
-      <main>
-        <section class="hero">
+      <main data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Седона</h1>
 
           <img class="hero__logo" width="458" height="352" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
 
-        <section class="features">
+        <section class="features" data-test="advantages">
           <div class="features__intro intro">
             <h2 class="features__title intro__title title-large">Седона&#160;&#8212; небольшой городок в&#160;Аризоне, заслуживающий большего!</h2>
 
@@ -73,7 +73,7 @@
 
               <div class="feature_card__image">
                 <img width="800" height="385" src="#" alt="Городок Седона.">
-              </div>
+               </div>
             </li>
 
             <li class="features__item feature_card feature_card--secondary">
@@ -100,7 +100,7 @@
               </div>
             </li>
 
-            <li class="features__item features__item--wide feature_card feature_card--primary">
+            <li class="features__item features__item--wide feature_card feature_card--primary feature_card--reverse">
               <div class="feature_card__text">
                 <h3 class="feature_card__title title-middle">Там есть мост дьявола</h3>
 
@@ -114,7 +114,7 @@
           </ul>
         </section>
 
-        <section class="services">
+        <section class="services" data-test="advantages">
           <div class="services__intro intro">
             <h2 class="services__title intro__title title-large">Приезжайте в&#160;Седону отдохнуть в&#160;комфорте и&#160;уюте!</h2>
 
@@ -154,7 +154,7 @@
           </ul>
         </section>
 
-        <section class="search">
+        <section class="search" data-test="search">
           <div class="search__intro intro">
             <h2 class="search__title intro__title title-large">Заинтересовались?</h2>
 
@@ -164,7 +164,7 @@
           <a class="search__button button button--primary button--large" href="#">Поиск гостинницы в&#160;седоне</a>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe__intro intro">
             <h2 class="subscribe__title intro__title title-large">Подпишитесь на&#160;рассылку</h2>
 
@@ -178,13 +178,13 @@
                 <input type="email" name="email" placeholder="Ваш e-mail" required>
               </label>
 
-              <button class="form__button button button--secondary" type="submit">Подписаться</button>
+              <button class="form__button button button--secondary button--form" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="page-footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
