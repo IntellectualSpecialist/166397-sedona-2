@@ -46,7 +46,7 @@
           </li>
         </ul>
 
-        <a class="header__want button button--primary" href="#">Хочу сюда!</a>
+        <a class="page-header__want button button--primary" href="#">Хочу сюда!</a>
       </header>
 
       <main data-test="main">
@@ -82,14 +82,14 @@
 
                   <li class="filters__item">
                     <label class="filters__field field field--checkbox">
-                      <input type="checkbox" name="pool" checked>
+                      <input type="checkbox" name="parking" checked>
                       <span>Парковка</span>
                     </label>
                   </li>
 
                   <li class="filters__item">
                     <label class="filters__field field field--checkbox">
-                      <input type="checkbox" name="pool">
+                      <input type="checkbox" name="wi-fi">
                       <span>Wi-Fi</span>
                     </label>
                   </li>
@@ -174,24 +174,21 @@
             </select>
 
             <ul class="hotels-cards__view-switcher view-switcher">
-              <li class="view-switcher__item">
+              <li class="view-switcher__item view-switcher__item--tile">
                 <a class="view-switcher__button" href="catalog.html?view=tile">
                   <span class="visually-hidden">Вид: Плитка.</span>
-                  <img width="16" height="14" src="#" alt="">
                 </a>
               </li>
 
-              <li class="view-switcher__item">
+              <li class="view-switcher__item view-switcher__item--card">
                 <a class="view-switcher__button" href="catalog.html?view=card">
                   <span class="visually-hidden">Вид: Карточки.</span>
-                  <img width="16" height="14" src="#" alt="">
                 </a>
               </li>
 
-              <li class="view-switcher__item">
+              <li class="view-switcher__item view-switcher__item--list">
                 <a class="view-switcher__button" href="catalog.html?view=list">
                   <span class="visually-hidden">Вид: Список.</span>
-                  <img width="16" height="14" src="#" alt="">
                 </a>
               </li>
             </ul>
@@ -303,7 +300,7 @@
             </li>
           </ul>
 
-          <ol class="hotels__pagination pagination">
+          <ol class="hotels-cards__pagination pagination">
             <li class="pagination__item">
               <a class="pagination__link pagination__link--current">1</a>
             </li>
@@ -380,63 +377,6 @@
           <img width="115" height="33" src="#" alt="Логотип «HTML Academy». Перейти на сайт.">
         </a>
       </footer>
-    </div>
-
-    <div class="modal">
-      <div class="modal__content">
-        <button class="modal__close button-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <section class="modal__search search">
-          <h2 class="search__title title-large">Поиск гостиницы в Седоне</h2>
-
-          <div class="search__form search-form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <label class="search-form__field field field--date field--invalid">
-                <span class="field__label">Дата заезда:</span>
-                <input type="text" name="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
-                <span class="field__message">Мы не можем отправить вас в прошлое.</span>
-              </label>
-
-              <label class="search-form__field field field--date">
-                <span class="field__label">Дата заезда:</span>
-                <input type="text" name="check-out" value="27 апреля 2020" placeholder="Укажите дату" required>
-                <span class="field__message">На эти даты есть свободные номера. Пока есть.</span>
-              </label>
-
-              <div class="search-form__wrapper">
-                <div class="search-form__field field field--counter">
-                  <label class="field__label" for="search-form-adults">Взрослые:</label>
-
-                  <span class="field__counter">
-                    <button class="field__button" type="button">-</button>
-                    <input id="search-form-adults" type="number" name="adults" value="2" min="0" max="99">
-                    <button class="field__button" type="button">+</button>
-                  </span>
-                </div>
-
-                <div class="search-form__field field field--counter">
-                  <div class="field__label">
-                    <label class="field__label" for="search-form-children">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip__button" type="button" aria-labelledby="tooltip-label-children"></button>
-                      <span class="tooltip__info" id="tooltip-label-children">Укажите количество детей, которые будут с&#160;вами, возраст которых от&#160;6&#160;до&#160;18&#160;лет. Дети до&#160;6&#160;лет размещаются бесплатно.</span>
-                    </span>
-                  </div>
-
-                  <span class="field__counter">
-                    <button class="field__button" type="button">-</button>
-                    <input id="search-form-children" type="number" name="children" value="2" min="0" max="99">
-                    <button class="field__button" type="button">+</button>
-                  </span>
-                </div>
-              </div>
-
-              <button class="search-form__button button button--secondary button--large" type="submit">Найти</button>
-            </form>
-          </div>
-        </section>
-      </div>
     </div>
 
   </body>
