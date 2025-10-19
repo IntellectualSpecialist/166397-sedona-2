@@ -147,6 +147,12 @@ img {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+.tooltip__button {
+  color: #ffffff;
+  background-color: #83b3d3;
+  border: none;
+}
+
 /* phone */
 .phone {
   font-style: normal;
