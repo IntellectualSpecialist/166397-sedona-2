@@ -20,12 +20,24 @@
 }
 
 /* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .container {
@@ -197,7 +209,7 @@ body {
 
 .feature-card--primary {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .feature-card--primary .feature-card__title {
@@ -251,7 +263,7 @@ body {
 }
 
 .range__handle {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
 }
 
@@ -301,8 +313,9 @@ body {
   background-image:
     url("../images/divider.svg"),
     image-set(
-        url("../images/hero-background@1x.webp"),
-        url("../images/hero-background@1x.jpg"));
+      url("../images/hero-background@1x.webp"),
+      url("../images/hero-background@1x.jpg")
+    );
   background-repeat: no-repeat;
   background-position: left bottom, left top;
   background-size: contain, cover;
@@ -315,7 +328,7 @@ body {
 
 .features__item:nth-child(4n+1) {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .features__item:nth-child(4n+1) .features__item-title {
@@ -339,6 +352,14 @@ body {
 .subscribe--dark {
   color: #ffffff;
   background-color: #3f5e72;
+  background-image: image-set(
+    url("../images/subscribe-bg@2x.webp") 2x,
+    url("../images/subscribe-bg@1x.webp") 1x,
+    url("../images/subscribe-bg@2x.jpg") 2x,
+    url("../images/subscribe-bg@1x.jpg") 1x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe--dark .subscribe__title {
