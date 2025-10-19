@@ -1,0 +1,377 @@
+/* fonts */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/ptsans-400.woff2") format("woff2"),
+    url("../fonts/ptsans-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../fonts/ptsans-700.woff2") format("woff2"),
+    url("../fonts/ptsans-700.woff") format("woff");
+  font-display: swap;
+}
+
+/* global */
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* button */
+.button {
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.button--primary {
+  background-color: #756157;
+}
+
+.button--secondary {
+  background-color: #82b3d3;
+}
+
+.button--active {
+  background-color: #7db54f;
+}
+
+.button--large {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* field */
+.field input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.field input::placeholder {
+  font-weight: 400;
+  color: currentColor;
+  opacity: 0.6;
+}
+
+.field--counter input {
+  line-height: 20px;
+}
+
+.field--invalid .field__message {
+  color: #ff5757;
+}
+
+.field__label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.field__message {
+  font-size: 16px;
+}
+
+.field__button {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+/* control */
+.control input {
+  background-color: #ffffff;
+  border: none;
+}
+
+.control__label {
+  line-height: 23px;
+}
+
+/* select */
+.select {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* tooltip */
+.tooltip__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* phone */
+.phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* title-extra-large */
+.title-extra-large {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/* title-large */
+.title-large {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* title-middle */
+.title-middle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* description */
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* site-list */
+.site-list__link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* feature-card  */
+.feature-card {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-card--primary {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.feature-card--primary .feature-card__title {
+  color: #ffffff;
+}
+
+.feature-card--secondary {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* service-card */
+.service-card {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-card--light {
+  background-color: #ffffff;
+}
+
+/* hotel-card */
+.hotel-card__link {
+  text-decoration: none;
+}
+
+.hotel-card__title {
+  text-align: left;
+  text-transform: none;
+}
+
+.hotel-card__stars {
+  background-image: url("../images/star-icon.svg");
+  background-repeat: space no-repeat;
+  background-position: left center;
+}
+
+.hotel-card__raiting {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+/* range */
+.range__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 0.3;
+}
+
+.range__handle {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+/* filters */
+.filters__group {
+  border: none;
+}
+
+.filters__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filters__list {
+  list-style: none;
+}
+
+/* pagination */
+.pagination {
+  list-style: none;
+}
+
+.pagination__link--current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination__link--more {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+}
+
+/* page-header */
+.page-header {
+  color: #000000;
+}
+
+/* hero */
+.hero {
+  color: #ffffff;
+  background-color: #263e42;
+  background-image:
+    url("../images/divider.svg"),
+    image-set(
+        url("../images/hero-background@1x.webp"),
+        url("../images/hero-background@1x.jpg"));
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  background-size: contain, cover;
+}
+
+/* features */
+.features__list {
+  list-style: none;
+}
+
+.features__item:nth-child(4n+1) {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.features__item:nth-child(4n+1) .features__item-title {
+  color: #ffffff;
+}
+
+.features__item:nth-child(4n+3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* services */
+.services {
+  text-align: center;
+}
+
+.services__list {
+  list-style: none;
+}
+
+/* subscribe */
+.subscribe--dark {
+  color: #ffffff;
+  background-color: #3f5e72;
+}
+
+.subscribe--dark .subscribe__title {
+  color: #ffffff;
+}
+
+/* footer */
+.footer {
+  color: #000000;
+}
+
+.footer__contacts {
+  font-style: normal;
+}
+
+/* inner-intro */
+.inner-intro {
+  color: #ffffff;
+  background-color: #3f5e72;
+  background-image: image-set(
+    url("../images/filter-bg@1x.webp"),
+    url("../images/filter-bg@1x.jpg")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* modal */
+.modal {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal__content {
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}

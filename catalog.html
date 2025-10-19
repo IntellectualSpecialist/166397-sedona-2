@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона. Гостиницы.</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -78,23 +79,23 @@
 
                 <ul class="filters__list">
                   <li class="filters__item">
-                    <label class="filters__field field field--checkbox">
+                    <label class="filters__control control control--checkbox">
                       <input type="checkbox" name="pool" checked>
-                      <span>Бассейн</span>
+                      <span class="control__label">Бассейн</span>
                     </label>
                   </li>
 
                   <li class="filters__item">
-                    <label class="filters__field field field--checkbox">
+                    <label class="filters__control control control--checkbox">
                       <input type="checkbox" name="parking" checked>
-                      <span>Парковка</span>
+                      <span class="control__label">Парковка</span>
                     </label>
                   </li>
 
                   <li class="filters__item">
-                    <label class="filters__field field field--checkbox">
+                    <label class="filters__control control control--checkbox">
                       <input type="checkbox" name="wi-fi">
-                      <span>Wi-Fi</span>
+                      <span class="control__label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -105,23 +106,23 @@
 
                 <ul class="filters__list">
                   <li class="filters__item">
-                    <label class="filters__field field field--radio">
+                    <label class="filters__control control control--radio">
                       <input type="radio" name="housing" value="hotel" checked>
-                      <span>Гостиница</span>
+                      <span class="control__label">Гостиница</span>
                     </label>
                   </li>
 
                   <li class="filters__item">
-                    <label class="filters__field field field--radio">
+                    <label class="filters__control control control--radio">
                       <input type="radio" name="housing" value="motel">
-                      <span>Мотель</span>
+                      <span class="control__label">Мотель</span>
                     </label>
                   </li>
 
                   <li class="filters__item">
-                    <label class="filters__field field field--cheradiockbox">
+                    <label class="filters__control control control--radio">
                       <input type="radio" name="housing" value="apartments">
-                      <span>Апартаменты</span>
+                      <span class="control__label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -169,30 +170,30 @@
 
         <section class="hotels-cards" data-test="catalog">
           <header class="hotels-cards__header">
-            <h2 class="hotels-cards__title">Найдено гостиниц: <span class="hotels-cards__title-count">38</span></h2>
+            <h2 class="hotels-cards__title title-large">Найдено гостиниц: <span class="hotels-cards__title-count">38</span></h2>
 
-            <select name="hotels-cards__sorting sorting" aria-label="Сортировка">
+            <select class="hotels-cards__sorting select" name="hotels-sorting" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
 
-            <ul class="hotels-cards__view-switcher view-switcher">
+            <ul class="hotels-cards__view-switcher view-switcher" aria-label="Вид отображения">
               <li class="view-switcher__item">
                 <a class="view-switcher__button view-switcher__button--tile view-switcher__button--active" href="catalog.html?view=tile">
-                  <span class="visually-hidden">Вид: Плитка.</span>
+                  <span class="visually-hidden">Плитка.</span>
                 </a>
               </li>
 
               <li class="view-switcher__item">
                 <a class="view-switcher__button view-switcher__button--card" href="catalog.html?view=card">
-                  <span class="visually-hidden">Вид: Карточки.</span>
+                  <span class="visually-hidden">Карточки.</span>
                 </a>
               </li>
 
               <li class="view-switcher__item">
                 <a class="view-switcher__button view-switcher__button--list" href="catalog.html?view=list">
-                  <span class="visually-hidden">Вид: Список.</span>
+                  <span class="visually-hidden">Список.</span>
                 </a>
               </li>
             </ul>
@@ -318,19 +319,19 @@
 
           <ol class="hotels-cards__pagination pagination">
             <li class="pagination__item">
-              <a class="pagination__link pagination__link--current">1</a>
+              <a class="pagination__link pagination__link--current button button--secondary button--large">1</a>
             </li>
 
             <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
+              <a class="pagination__link button button--secondary button--large" href="#">2</a>
             </li>
 
             <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
+              <a class="pagination__link button button--secondary button--large" href="#">3</a>
             </li>
 
             <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
+              <a class="pagination__link button button--secondary button--large" href="#">4</a>
             </li>
 
             <li class="pagination__item">
@@ -338,12 +339,12 @@
             </li>
 
             <li class="pagination__item">
-              <a class="pagination__link" href="#">10</a>
+              <a class="pagination__link button button--secondary button--large" href="#">10</a>
             </li>
           </ol>
         </section>
 
-        <section class="subscribe subscribe--light" data-test="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe__intro intro">
             <h2 class="subscribe__title intro__title title-large">Подпишитесь на&#160;рассылку</h2>
 
@@ -393,9 +394,9 @@
           </li>
         </ul>
 
-        <div class="page-footer__phone-wrapper">
+        <address class="page-footer__contacts">
           <a class="page-footer__phone phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </div>
+        </address>
 
         <a class="page-footer__dev-link dev-link" href="https://htmlacademy.ru/" target="_blank" rel="noopener noreferrer">
           <svg width="115" height="33" viewBox="0 0 115 34" aria-label="Логотип «HTML Academy». Перейти на сайт Академии." role="img" fill="none" xmlns="http://www.w3.org/2000/svg">
