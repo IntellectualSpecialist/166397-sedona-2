@@ -201,6 +201,16 @@ img {
   color: #000000;
 }
 
+/* user-list */
+.user-list__count {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7db54f;
+}
+
 /* feature-card  */
 .feature-card {
   text-align: center;
