@@ -193,6 +193,10 @@ img {
 }
 
 /* site-list */
+.site-list {
+  list-style: none;
+}
+
 .site-list__link {
   font-size: 20px;
   line-height: 24px;
@@ -202,6 +206,10 @@ img {
 }
 
 /* user-list */
+.user-list {
+  list-style: none;
+}
+
 .user-list__count {
   font-size: 10px;
   line-height: 10px;
@@ -209,6 +217,11 @@ img {
   text-decoration: none;
   color: #ffffff;
   background-color: #7db54f;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  list-style: none;
 }
 
 /* feature-card  */
