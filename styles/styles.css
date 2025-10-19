@@ -224,6 +224,16 @@ img {
   list-style: none;
 }
 
+/* social */
+.social {
+  list-style: none;
+}
+
+/* view-switcher */
+.view-switcher {
+  list-style: none;
+}
+
 /* feature-card  */
 .feature-card {
   text-align: center;
@@ -408,6 +418,11 @@ img {
   );
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* hotels-cards */
+.hotels-cards__list {
+  list-style: none;
 }
 
 /* modal */
