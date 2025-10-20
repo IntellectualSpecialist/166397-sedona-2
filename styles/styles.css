@@ -230,6 +230,18 @@ img {
   list-style: none;
 }
 
+.breadcrumbs__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs__link--home {
+  background-image: url("../images/home-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 15px;
+}
+
 /* social */
 .social {
   list-style: none;
@@ -238,6 +250,23 @@ img {
 /* view-switcher */
 .view-switcher {
   list-style: none;
+}
+
+.view-switcher__button {
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+}
+
+.view-switcher__button--tile {
+  background-image: url("../images/tile-icon.svg");
+}
+
+.view-switcher__button--card {
+  background-image: url("../images/card-icon.svg");
+}
+
+.view-switcher__button--list {
+  background-image: url("../images/list-icon.svg");
 }
 
 /* feature-card  */
