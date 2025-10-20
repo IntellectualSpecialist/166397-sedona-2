@@ -454,8 +454,8 @@ img {
   color: #ffffff;
   background-color: #3f5e72;
   background-image: image-set(
-    url("../images/filter-bg@1x.webp"),
-    url("../images/filter-bg@1x.jpg")
+    url("../images/inner-intro-bg@1x.webp"),
+    url("../images/inner-intro-bg@1x.jpg")
   );
   background-repeat: no-repeat;
   background-size: cover;
