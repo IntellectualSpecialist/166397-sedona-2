@@ -80,6 +80,7 @@ img {
 
 /* field */
 .field input {
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -89,7 +90,6 @@ img {
 }
 
 .field input::placeholder {
-  font-weight: 400;
   color: currentColor;
   opacity: 0.6;
 }
@@ -286,12 +286,12 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.feature-card--primary {
+.feature-card--has-image {
   color: #ffffff;
   background-color: #82b3d3;
 }
 
-.feature-card--primary .feature-card__title {
+.feature-card--has-image .feature-card__title {
   color: #ffffff;
 }
 
@@ -405,15 +405,6 @@ img {
   list-style: none;
 }
 
-.features__item:nth-child(4n+1) {
-  color: #ffffff;
-  background-color: #82b3d3;
-}
-
-.features__item:nth-child(4n+1) .features__item-title {
-  color: #ffffff;
-}
-
 .features__item:nth-child(4n+3) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -425,6 +416,10 @@ img {
 
 .services__list {
   list-style: none;
+}
+
+.services__item:nth-child(even) {
+  background-color: #ffffff;
 }
 
 /* subscribe */
