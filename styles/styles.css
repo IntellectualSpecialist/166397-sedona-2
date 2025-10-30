@@ -463,9 +463,12 @@ img {
 }
 
 .hotel-card__stars {
+  width: 140px;
+  min-height: 37px;
   background-image: url("../images/star-icon.svg");
   background-repeat: space no-repeat;
   background-position: left center;
+  background-size: 18px 18px;
 }
 
 .hotel-card__raiting {
