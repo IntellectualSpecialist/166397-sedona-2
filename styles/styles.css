@@ -636,8 +636,10 @@ img {
 }
 
 .page-header__logo {
+  position: relative;
   display: block;
   margin-right: 30px;
+  margin-bottom: -10px;
 }
 
 .page-header__nav {
