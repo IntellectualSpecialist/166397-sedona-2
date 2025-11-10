@@ -255,7 +255,8 @@ img {
 .field input {
   width: 100%;
   min-width: 50px;
-  padding: 14px 20px;
+  min-height: 52px;
+  padding: 0 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -527,27 +528,44 @@ img {
   user-select: none;
 }
 
-.user-list__link svg {
-  transition: fill 0.3s ease;
+.user-list__link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.user-list__link--search::before {
+  mask-image: url('../images/search-icon.svg');
+}
+
+.user-list__link--favourite::before {
+  mask-image: url('../images/heart-icon.svg');
 }
 
 @media (hover: hover) {
-  .user-list__link:hover svg {
-    fill: #756157;
+  .user-list__link:hover::before {
+    background-color: #756157;
   }
 }
 
-.user-list__link:focus-visible svg {
-  fill: #756157;
+.user-list__link:focus-visible::before {
+  background-color: #756157;
 }
 
 @supports not selector(:focus-visible) {
-  .user-list__link:focus svg {
-    fill: #756157;
+  .user-list__link:focus::before {
+    background-color: #756157;
   }
 }
 
-.user-list__link:active {
+.user-list__link:active::before {
   opacity: 0.4;
 }
 
@@ -586,7 +604,7 @@ img {
   position: relative;
 }
 
-.breadcrumbs__item::before {
+.breadcrumbs__item::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -599,16 +617,27 @@ img {
   transform: translateY(-50%);
 }
 
-.breadcrumbs__item:last-child:before {
+.breadcrumbs__item:last-child::after {
   display: none
 }
 
 .breadcrumbs__link {
+  position: relative;
   display: block;
   font-size: 16px;
   text-decoration: none;
   color: inherit;
   transition: opacity 0.3s ease;
+}
+
+.breadcrumbs__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  transform: translate(-50%, -50%);
 }
 
 @media (hover: hover) {
@@ -650,50 +679,56 @@ img {
 }
 
 .social__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 47px;
   height: 40px;
+}
+
+.social__link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-color: #83b3d3;
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-clip: content-box;
   transition: background-color 0.3s ease;
 }
 
-.social__link--vk {
+.social__link--vk::before {
   mask-image: url('../images/vk-icon.svg');
   mask-size: 24px 14px;
 }
 
-.social__link--tg {
+.social__link--tg::before {
   mask-image: url('../images/tg-icon.svg');
   mask-size: 18px 16px;
 }
 
-.social__link--yt {
+.social__link--yt::before {
   mask-image: url('../images/yt-icon.svg');
   mask-size: 22px 17px;
 }
 
 @media (hover: hover) {
-  .social__link:hover:not(:active) {
+  .social__link:hover:not(:active)::before {
     background-color: #68a2ca;
   }
 }
 
-.social__link:focus-visible {
+.social__link:focus-visible::before {
   background-color: #68a2ca;
 }
 
 @supports not selector(:focus-visible) {
-  .social__link:focus {
+  .social__link:focus::before {
     background-color: #68a2ca;
   }
 }
 
-.social__link:active {
+.social__link:active::before {
   background-color: rgba(104, 162, 202, 0.3);
 }
 
@@ -736,6 +771,10 @@ img {
 }
 
 .view-switcher__button:active {
+  border-color: #000000;
+}
+
+.view-switcher__button--active {
   border-color: #000000;
 }
 
@@ -866,6 +905,7 @@ img {
 
 /* hotel-card */
 .hotel-card {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 212px 1fr;
@@ -883,9 +923,18 @@ img {
   transition: opacity 0.3s ease;
 }
 
+.hotel-card__link:has(.hotel-card__image) {
+  overflow: hidden;
+}
+
 @media (hover: hover) {
   .hotel-card__link:hover:not(:active) {
     opacity: 0.7;
+  }
+
+  .hotel-card__link:hover .hotel-card__image {
+
+    transform: scale(1.2);
   }
 }
 
@@ -905,6 +954,11 @@ img {
 
 .hotel-card__image {
   display: block;
+  overflow: hidden;
+}
+
+.hotel-card__image {
+  transition: transform 0.3s ease;
 }
 
 .hotel-card__title {
@@ -1387,6 +1441,7 @@ img {
 
 .hotels-cards__pagination {
   padding-top: 40px;
+  border-top: 1px solid #e6e6e6;
 }
 
 /* modal */
