@@ -1214,8 +1214,8 @@ img {
   background-image:
     url("../images/divider.svg"),
     image-set(
-      url("../images/hero-background@1x.webp"),
-      url("../images/hero-background@1x.jpg")
+      url("../images/hero-background.webp"),
+      url("../images/hero-background.jpg")
     );
   background-repeat: no-repeat;
   background-position: left bottom, left top;
@@ -1382,8 +1382,8 @@ img {
   color: #ffffff;
   background-color: #3f5e72;
   background-image: image-set(
-    url("../images/inner-intro-bg@1x.webp"),
-    url("../images/inner-intro-bg@1x.jpg")
+    url("../images/inner-intro-bg.webp"),
+    url("../images/inner-intro-bg.jpg")
   );
   background-repeat: no-repeat;
   background-size: cover;
