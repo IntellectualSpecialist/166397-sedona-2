@@ -130,29 +130,29 @@
 
                 <div class="range">
                   <div class="range__fields">
-                    <label class="range__field field">
+                    <label class="range__field range__field--from field">
                       <span class="range__label field__label">от</span>
-                      <input type="number" name="from" value="0" min="0" max="10000">
+                      <input type="number" name="from" value="0" min="0" max="10000" required>
                     </label>
 
-                    <label class="range__field field">
+                    <label class="range__field range__field--to field">
                       <span class="range__label field__label">до</span>
-                      <input type="number" name="to" value="9000" min="0" max="10000">
+                      <input type="number" name="to" value="9000" min="0" max="10000" required>
                     </label>
                   </div>
 
                   <div class="range__wrapper">
                     <div class="range__scale">
-                      <div class="range__bar"></div>
+                      <div class="range__bar" style="left: 0; width: 226px;">
+                        <button class="range__handle range__handle--from" type="button">
+                          <span class="visually-hidden">Двигать ползунок</span>
+                        </button>
+
+                        <button class="range__handle range__handle--to" type="button">
+                          <span class="visually-hidden">Двигать ползунок</span>
+                        </button>
+                      </div>
                     </div>
-
-                    <button class="range__handle range__handle--from" type="button">
-                      <span class="visually-hidden">Двигать ползунок</span>
-                    </button>
-
-                    <button class="range__handle range__handle--to" type="button">
-                      <span class="visually-hidden">Двигать ползунок</span>
-                    </button>
                   </div>
                 </div>
               </fieldset>
@@ -169,11 +169,14 @@
           <header class="hotels-cards__header">
             <h2 class="hotels-cards__title title-large">Найдено гостиниц: <span class="hotels-cards__title-count">38</span></h2>
 
-            <select class="hotels-cards__sorting select" name="hotels-sorting" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
+            <div class="hotels-cards__sorting select">
+              <span class="visually-hidden">Сортировка</span>
+              <select name="hotels-sorting">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </div>
 
             <ul class="hotels-cards__view-switcher view-switcher" aria-label="Вид отображения">
               <li class="view-switcher__item">
@@ -349,10 +352,10 @@
           </div>
 
           <div class="subscribe__form form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
+            <form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
               <label class="form__field field">
                 <span class="visually-hidden">Ваш e-mail</span>
-                <input type="email" name="email" placeholder="Ваш e-mail" required>
+                <input type="email" name="email" placeholder="Ваш e-mail" autocomplete="on" required>
               </label>
 
               <button class="form__button button button--secondary button--large" type="submit">Подписаться</button>
