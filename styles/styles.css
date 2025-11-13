@@ -1529,11 +1529,7 @@ mask-image: url('../images/plus.svg');
 .search-form form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px 23px;
-}
-
-.search-form__field {
-  margin-bottom: 23px;
+  gap: 23px 10px;
 }
 
 .search-form__field--wide {
