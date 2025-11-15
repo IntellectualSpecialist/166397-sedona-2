@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Седона. Поиск гостиницы.</title>
-    <meta name="description" content="Найдите для себя лучшую гостиницу в Седоне!">
+    <title>HTML Academy: Седона. Главная.</title>
+    <meta name="description" content="Седона — небольшой городок в Аризоне, заслуживающий большего!">
     <link rel="preload" href="fonts/ptsans-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsans-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -157,7 +162,7 @@
             <p class="search__description intro__description description">Укажите предполагаемые даты поездки, <br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
           </div>
 
-          <a class="search__button button button--primary button--large" href="modal.html">Поиск гостиницы в&nbsp;седоне</a>
+          <a class="search__button button button--primary button--large js-modal-button" href="modal.html">Поиск гостиницы в&nbsp;седоне</a>
         </section>
 
         <section class="subscribe subscribe--dark" data-test="subscribe">
@@ -243,7 +248,7 @@
                   <button class="field__button field__button--less" type="button">
                     <span class="visually-hidden">Уменьшить</span>
                   </button>
-                  <input id="search-form-adults" type="number" name="adults" value="2" min="0" max="99">
+                  <input id="search-form-adults" type="number" name="adults" value="2" min="0" max="99" placeholder="0" required>
                   <button class="field__button field__button--more" type="button">
                     <span class="visually-hidden">Увеличить</span>
                   </button>
@@ -255,7 +260,7 @@
                   <label class="field__label" for="search-form-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip__button" type="button" aria-labelledby="tooltip-label-children">
-                      <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="20" height="20" viewBox="0 0 20 20" focusable="false" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4h2v2h-2v-2Zm2 12h-2v-9h2v9Z"/>
                       </svg>
                     </button>
@@ -267,7 +272,7 @@
                   <button class="field__button field__button--less" type="button">
                     <span class="visually-hidden">Уменьшить</span>
                   </button>
-                  <input id="search-form-children" type="number" name="children" value="2" min="0" max="99">
+                  <input id="search-form-children" type="number" name="children" value="2" min="0" max="99" placeholder="0" required>
                   <button class="field__button field__button--more" type="button">
                     <span class="visually-hidden">Увеличить</span>
                   </button>
@@ -280,5 +285,6 @@
         </section>
       </div>
     </div>
+
   </body>
 </html>

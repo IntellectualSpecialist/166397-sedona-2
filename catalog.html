@@ -7,6 +7,11 @@
     <meta name="description" content="Забронируйте отель в Седоне с видом на прекрасные скалы!">
     <link rel="preload" href="fonts/ptsans-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsans-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -63,9 +68,7 @@
             </li>
 
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--current">
-                <span>Гостиницы</span>
-              </a>
+              <a class="breadcrumbs__link breadcrumbs__link--current">Гостиницы</a>
             </li>
           </ol>
 
@@ -170,8 +173,8 @@
             <h2 class="hotels-cards__title title-large">Найдено гостиниц: <span class="hotels-cards__title-count">38</span></h2>
 
             <div class="hotels-cards__sorting select">
-              <span class="visually-hidden">Сортировка</span>
-              <select name="hotels-sorting">
+              <label class="visually-hidden" for="hotels-sorting">Сортировка</label>
+              <select name="hotels-sorting" id="hotels-sorting">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
@@ -397,5 +400,6 @@
       </footer>
     </div>
 
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
