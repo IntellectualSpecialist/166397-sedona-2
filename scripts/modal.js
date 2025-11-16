@@ -1,7 +1,8 @@
 import { isEscapeKey } from './utils.js';
 import { initAllCounters, destroyAllCounters } from './counter.js';
+import { initAllTooltips, destroyAllTooltips } from './tooltip.js';
+import { bodyElement } from './const.js';
 
-const bodyElement = document.body;
 const containerElement = bodyElement.querySelector('.container');
 const openButtonElement = containerElement.querySelector('.js-modal-button');
 const modalElement = bodyElement.querySelector('.modal');
@@ -60,6 +61,7 @@ function openModal() {
   checkInInputElement.focus();
   bodyElement.style = 'overflow: hidden;';
   initAllCounters(modalElement);
+  initAllTooltips(modalElement);
 }
 
 function closeModal() {
@@ -70,6 +72,7 @@ function closeModal() {
   removeLoopFocusOnModal();
   bodyElement.removeAttribute('style');
   destroyAllCounters();
+  destroyAllTooltips();
 }
 
 const initModal = () => {

@@ -39,11 +39,13 @@ const initAllCounters = (wrapper) => {
 
   const counters = wrapper.querySelectorAll('.field--counter');
 
-  counters.forEach((counterElement) => {
-    const handler = initCounter(counterElement);
-    handler.registerEvents();
-    counterHandlers.push(handler);
-  });
+  if (counters.length) {
+    counters.forEach((counterElement) => {
+      const handler = initCounter(counterElement);
+      handler.registerEvents();
+      counterHandlers.push(handler);
+    });
+  }
 };
 
 const destroyAllCounters = () => {
