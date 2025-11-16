@@ -1,9 +1,16 @@
-const MIN_COUNT_VALUE = 0;
-const MAX_COUNT_VALUE = 99;
 let counterHandlers = [];
 
 const initCounter = (counterElement) => {
   const inputValueElement = counterElement.querySelector('.field__counter input');
+
+  const MIN_COUNT_VALUE = inputValueElement.min !== ''
+  ? Number(inputValueElement.min)
+  : 0;
+
+  const MAX_COUNT_VALUE = inputValueElement.max !== ''
+    ? Number(inputValueElement.max)
+    : 99;
+
   const buttonSmallerElement = counterElement.querySelector('.field__button--less');
   const buttonBiggerElement = counterElement.querySelector('.field__button--more');
 
