@@ -513,10 +513,10 @@ img {
 .control {
   display: flex;
   align-items: center;
-  cursor: pointer;
   transition: opacity 0.3s ease;
   will-change: opacity;
   transform: translateZ(0);
+  cursor: pointer;
 }
 
 .control input {
@@ -530,6 +530,7 @@ img {
   border: none;
   -webkit-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 
 @media (hover: hover) {
