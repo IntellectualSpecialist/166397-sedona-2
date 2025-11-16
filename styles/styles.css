@@ -1065,7 +1065,9 @@ img {
   font-size: 16px;
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    color 0.3s ease;
 }
 
 .breadcrumbs__link::before {
@@ -1095,7 +1097,7 @@ img {
 }
 
 .breadcrumbs__link[href]:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs__link--home {
@@ -1105,6 +1107,10 @@ img {
   background-repeat: no-repeat;
   background-size: 13px 15px;
   background-position: center;
+}
+
+.breadcrumbs__link--home:active {
+  opacity: 0.3;
 }
 
 /* social */
@@ -1561,6 +1567,7 @@ img {
 }
 
 .form__field input {
+  height: 100%;
   min-height: 52px;
   border-radius: 4px 0 0 4px;
 }
