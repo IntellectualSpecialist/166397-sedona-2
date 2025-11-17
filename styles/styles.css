@@ -61,7 +61,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -2041,7 +2041,7 @@ img {
 }
 
 /* modal */
-@keyframes opacity {
+@keyframes fade {
   0% {
     opacity: 0;
   }
@@ -2071,7 +2071,7 @@ img {
   background-color: rgba(242, 242, 242, 0.8);
   overflow: scroll;
   scrollbar-width: none;
-  animation: opacity 0.3s ease;
+  animation: fade 0.3s ease;
 }
 
 .modal::-webkit-scrollbar {
