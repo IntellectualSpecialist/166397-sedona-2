@@ -1778,13 +1778,17 @@ img {
     -webkit-image-set(
       url("../images/hero-background.webp"),
       url("../images/hero-background.jpg")
-    );
-  background-image:
-    url("../images/divider.svg"),
+    ),
     image-set(
       url("../images/hero-background.webp"),
       url("../images/hero-background.jpg")
     );
+  /* background-image:
+    url("../images/divider.svg"),
+    image-set(
+      url("../images/hero-background.webp"),
+      url("../images/hero-background.jpg")
+    ); */
   background-repeat: no-repeat;
   background-position: left bottom, left top;
   background-size: contain, cover;
