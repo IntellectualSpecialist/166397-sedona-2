@@ -514,8 +514,6 @@ img {
   display: flex;
   align-items: center;
   transition: opacity 0.3s ease;
-  will-change: opacity;
-  transform: translateZ(0);
   cursor: pointer;
 }
 
@@ -723,7 +721,7 @@ img {
   width: 19px;
   height: 9px;
   background-image: url("../images/triangle.svg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   transform: translateX(-50%);
 }
